@@ -1,0 +1,12 @@
+EUROPA Alignment
+Copyright 2026 Birger Moëll
+
+This project is derived from EUROPA Eval:
+https://github.com/BirgerMoell/europa-eval
+
+EUROPA Eval and EUROPA Alignment are licensed under Apache License 2.0.
+The original public evaluation scenarios in EUROPA Alignment are separately
+released under CC0 1.0 as described in DATA_LICENSE.
+
+Third-party research and standards informed the evaluation design but their
+benchmark prompts and datasets are not redistributed here. See docs/SOURCES.md.

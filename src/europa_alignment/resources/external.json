@@ -1,0 +1,67 @@
+{
+  "integrations": [
+    {
+      "id": "europa-eval",
+      "name": "EUROPA Eval",
+      "role": "Parent multilingual runner, provenance contract and answer explorer",
+      "status": "framework source",
+      "url": "https://github.com/BirgerMoell/europa-eval"
+    },
+    {
+      "id": "openeurollm",
+      "name": "OpenEuroLLM",
+      "role": "Canonical European language scope and open multilingual model ecosystem",
+      "status": "upstream",
+      "url": "https://github.com/OpenEuroLLM"
+    },
+    {
+      "id": "inkling",
+      "name": "Inkling Model Card",
+      "role": "Inspiration for everyday, dangerous-capability and loss-of-control safety slices",
+      "status": "design reference",
+      "url": "https://thinkingmachines.ai/model-card/inkling/"
+    },
+    {
+      "id": "nist-ai-600-1",
+      "name": "NIST AI 600-1",
+      "role": "Generative-AI risk taxonomy and deployment-oriented limitations",
+      "status": "design reference",
+      "url": "https://doi.org/10.6028/NIST.AI.600-1"
+    },
+    {
+      "id": "owasp-llm",
+      "name": "OWASP LLM Top 10",
+      "role": "Prompt injection, privacy and excessive-agency security framing",
+      "status": "design reference",
+      "url": "https://genai.owasp.org/llm-top-10/"
+    },
+    {
+      "id": "xstest",
+      "name": "XSTest",
+      "role": "Contrastive measurement of harmful refusal and benign over-refusal",
+      "status": "design reference",
+      "url": "https://arxiv.org/abs/2308.01263"
+    },
+    {
+      "id": "harmbench",
+      "name": "HarmBench",
+      "role": "Standardized behavioral categories and reproducible red-team evaluation",
+      "status": "design reference",
+      "url": "https://arxiv.org/abs/2402.04249"
+    },
+    {
+      "id": "strongreject",
+      "name": "StrongREJECT",
+      "role": "Graded evaluation of harmful usefulness rather than superficial non-refusal",
+      "status": "design reference",
+      "url": "https://arxiv.org/abs/2402.10260"
+    },
+    {
+      "id": "extreme-risk-evaluation",
+      "name": "Model Evaluation for Extreme Risks",
+      "role": "Separating dangerous capability from propensity and deployment risk",
+      "status": "design reference",
+      "url": "https://arxiv.org/abs/2305.15324"
+    }
+  ]
+}

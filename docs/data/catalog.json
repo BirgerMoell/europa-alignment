@@ -1,0 +1,847 @@
+{
+  "project": {
+    "name": "EUROPA Alignment",
+    "version": "0.1.0",
+    "tagline": "One transparent alignment protocol across 36 European languages.",
+    "repository": "https://github.com/BirgerMoell/europa-alignment"
+  },
+  "suite": {
+    "id": "europa-alignment-core",
+    "name": "EUROPA Alignment 36-language public pilot",
+    "status": "translation-review-pilot",
+    "items": 576,
+    "pairs": 36,
+    "languages": [
+      {
+        "code": "bul",
+        "bcp47": "bg",
+        "name": "Bulgarian",
+        "autonym": "български",
+        "group": "eu_official",
+        "scripts": [
+          "Cyrl"
+        ],
+        "variants": [
+          "bul_Cyrl"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      },
+      {
+        "code": "ces",
+        "bcp47": "cs",
+        "name": "Czech",
+        "autonym": "čeština",
+        "group": "eu_official",
+        "scripts": [
+          "Latn"
+        ],
+        "variants": [
+          "ces_Latn"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      },
+      {
+        "code": "dan",
+        "bcp47": "da",
+        "name": "Danish",
+        "autonym": "dansk",
+        "group": "eu_official",
+        "scripts": [
+          "Latn"
+        ],
+        "variants": [
+          "dan_Latn"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      },
+      {
+        "code": "deu",
+        "bcp47": "de",
+        "name": "German",
+        "autonym": "Deutsch",
+        "group": "eu_official",
+        "scripts": [
+          "Latn"
+        ],
+        "variants": [
+          "deu_Latn"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      },
+      {
+        "code": "ell",
+        "bcp47": "el",
+        "name": "Greek",
+        "autonym": "ελληνικά",
+        "group": "eu_official",
+        "scripts": [
+          "Grek"
+        ],
+        "variants": [
+          "ell_Grek"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      },
+      {
+        "code": "eng",
+        "bcp47": "en",
+        "name": "English",
+        "autonym": "English",
+        "group": "eu_official",
+        "scripts": [
+          "Latn"
+        ],
+        "variants": [
+          "eng_Latn"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "source_native"
+        ]
+      },
+      {
+        "code": "est",
+        "bcp47": "et",
+        "name": "Estonian",
+        "autonym": "eesti",
+        "group": "eu_official",
+        "scripts": [
+          "Latn"
+        ],
+        "variants": [
+          "est_Latn",
+          "ekk_Latn"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      },
+      {
+        "code": "fin",
+        "bcp47": "fi",
+        "name": "Finnish",
+        "autonym": "suomi",
+        "group": "eu_official",
+        "scripts": [
+          "Latn"
+        ],
+        "variants": [
+          "fin_Latn"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      },
+      {
+        "code": "fra",
+        "bcp47": "fr",
+        "name": "French",
+        "autonym": "français",
+        "group": "eu_official",
+        "scripts": [
+          "Latn"
+        ],
+        "variants": [
+          "fra_Latn"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      },
+      {
+        "code": "gle",
+        "bcp47": "ga",
+        "name": "Irish",
+        "autonym": "Gaeilge",
+        "group": "eu_official",
+        "scripts": [
+          "Latn"
+        ],
+        "variants": [
+          "gle_Latn"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      },
+      {
+        "code": "hrv",
+        "bcp47": "hr",
+        "name": "Croatian",
+        "autonym": "hrvatski",
+        "group": "eu_official",
+        "scripts": [
+          "Latn"
+        ],
+        "variants": [
+          "hrv_Latn"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      },
+      {
+        "code": "hun",
+        "bcp47": "hu",
+        "name": "Hungarian",
+        "autonym": "magyar",
+        "group": "eu_official",
+        "scripts": [
+          "Latn"
+        ],
+        "variants": [
+          "hun_Latn"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      },
+      {
+        "code": "ita",
+        "bcp47": "it",
+        "name": "Italian",
+        "autonym": "italiano",
+        "group": "eu_official",
+        "scripts": [
+          "Latn"
+        ],
+        "variants": [
+          "ita_Latn"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      },
+      {
+        "code": "lav",
+        "bcp47": "lv",
+        "name": "Latvian",
+        "autonym": "latviešu",
+        "group": "eu_official",
+        "scripts": [
+          "Latn"
+        ],
+        "variants": [
+          "lav_Latn",
+          "ltg_Latn",
+          "lvs_Latn"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      },
+      {
+        "code": "lit",
+        "bcp47": "lt",
+        "name": "Lithuanian",
+        "autonym": "lietuvių",
+        "group": "eu_official",
+        "scripts": [
+          "Latn"
+        ],
+        "variants": [
+          "lit_Latn"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      },
+      {
+        "code": "mlt",
+        "bcp47": "mt",
+        "name": "Maltese",
+        "autonym": "Malti",
+        "group": "eu_official",
+        "scripts": [
+          "Latn"
+        ],
+        "variants": [
+          "mlt_Latn"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      },
+      {
+        "code": "nld",
+        "bcp47": "nl",
+        "name": "Dutch",
+        "autonym": "Nederlands",
+        "group": "eu_official",
+        "scripts": [
+          "Latn"
+        ],
+        "variants": [
+          "nld_Latn"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      },
+      {
+        "code": "pol",
+        "bcp47": "pl",
+        "name": "Polish",
+        "autonym": "polski",
+        "group": "eu_official",
+        "scripts": [
+          "Latn"
+        ],
+        "variants": [
+          "pol_Latn"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      },
+      {
+        "code": "por",
+        "bcp47": "pt",
+        "name": "Portuguese",
+        "autonym": "português",
+        "group": "eu_official",
+        "scripts": [
+          "Latn"
+        ],
+        "variants": [
+          "por_Latn"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      },
+      {
+        "code": "ron",
+        "bcp47": "ro",
+        "name": "Romanian",
+        "autonym": "română",
+        "group": "eu_official",
+        "scripts": [
+          "Latn"
+        ],
+        "variants": [
+          "ron_Latn"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      },
+      {
+        "code": "slk",
+        "bcp47": "sk",
+        "name": "Slovak",
+        "autonym": "slovenčina",
+        "group": "eu_official",
+        "scripts": [
+          "Latn"
+        ],
+        "variants": [
+          "slk_Latn"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      },
+      {
+        "code": "slv",
+        "bcp47": "sl",
+        "name": "Slovene",
+        "autonym": "slovenščina",
+        "group": "eu_official",
+        "scripts": [
+          "Latn"
+        ],
+        "variants": [
+          "slv_Latn"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      },
+      {
+        "code": "spa",
+        "bcp47": "es",
+        "name": "Spanish",
+        "autonym": "español",
+        "group": "eu_official",
+        "scripts": [
+          "Latn"
+        ],
+        "variants": [
+          "spa_Latn"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      },
+      {
+        "code": "swe",
+        "bcp47": "sv",
+        "name": "Swedish",
+        "autonym": "svenska",
+        "group": "eu_official",
+        "scripts": [
+          "Latn"
+        ],
+        "variants": [
+          "swe_Latn"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      },
+      {
+        "code": "cat",
+        "bcp47": "ca",
+        "name": "Catalan",
+        "autonym": "català",
+        "group": "co_official",
+        "scripts": [
+          "Latn"
+        ],
+        "variants": [
+          "cat_Latn"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      },
+      {
+        "code": "eus",
+        "bcp47": "eu",
+        "name": "Basque",
+        "autonym": "euskara",
+        "group": "co_official",
+        "scripts": [
+          "Latn"
+        ],
+        "variants": [
+          "eus_Latn"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      },
+      {
+        "code": "glg",
+        "bcp47": "gl",
+        "name": "Galician",
+        "autonym": "galego",
+        "group": "co_official",
+        "scripts": [
+          "Latn"
+        ],
+        "variants": [
+          "glg_Latn"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      },
+      {
+        "code": "bos",
+        "bcp47": "bs",
+        "name": "Bosnian",
+        "autonym": "bosanski",
+        "group": "candidate",
+        "scripts": [
+          "Latn"
+        ],
+        "variants": [
+          "bos_Latn"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      },
+      {
+        "code": "kat",
+        "bcp47": "ka",
+        "name": "Georgian",
+        "autonym": "ქართული",
+        "group": "candidate",
+        "scripts": [
+          "Geor"
+        ],
+        "variants": [
+          "kat_Geor"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      },
+      {
+        "code": "mkd",
+        "bcp47": "mk",
+        "name": "Macedonian",
+        "autonym": "македонски",
+        "group": "candidate",
+        "scripts": [
+          "Cyrl"
+        ],
+        "variants": [
+          "mkd_Cyrl"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      },
+      {
+        "code": "sqi",
+        "bcp47": "sq",
+        "name": "Albanian",
+        "autonym": "shqip",
+        "group": "candidate",
+        "scripts": [
+          "Latn"
+        ],
+        "variants": [
+          "sqi_Latn",
+          "als_Latn"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      },
+      {
+        "code": "srp",
+        "bcp47": "sr",
+        "name": "Serbian",
+        "autonym": "српски",
+        "group": "candidate",
+        "scripts": [
+          "Cyrl",
+          "Latn"
+        ],
+        "variants": [
+          "srp_Cyrl",
+          "srp_Latn"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      },
+      {
+        "code": "tur",
+        "bcp47": "tr",
+        "name": "Turkish",
+        "autonym": "Türkçe",
+        "group": "candidate",
+        "scripts": [
+          "Latn"
+        ],
+        "variants": [
+          "tur_Latn"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      },
+      {
+        "code": "ukr",
+        "bcp47": "uk",
+        "name": "Ukrainian",
+        "autonym": "українська",
+        "group": "candidate",
+        "scripts": [
+          "Cyrl"
+        ],
+        "variants": [
+          "ukr_Cyrl"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      },
+      {
+        "code": "isl",
+        "bcp47": "is",
+        "name": "Icelandic",
+        "autonym": "íslenska",
+        "group": "associated",
+        "scripts": [
+          "Latn"
+        ],
+        "variants": [
+          "isl_Latn"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      },
+      {
+        "code": "nor",
+        "bcp47": "no",
+        "name": "Norwegian",
+        "autonym": "norsk",
+        "group": "associated",
+        "scripts": [
+          "Latn"
+        ],
+        "variants": [
+          "nor_Latn",
+          "nno_Latn",
+          "nob_Latn"
+        ],
+        "item_count": 16,
+        "review_states": [
+          "machine_translated"
+        ]
+      }
+    ],
+    "templates": [
+      "harmful-direct",
+      "benign-security",
+      "roleplay-indirect",
+      "sycophancy",
+      "delusion-support",
+      "dependency-boundary",
+      "manipulation",
+      "privacy",
+      "medical-uncertainty",
+      "fairness",
+      "prompt-injection",
+      "tool-authorization",
+      "cyber-defense",
+      "dangerous-capability",
+      "deceptive-reporting",
+      "shutdown-compliance"
+    ],
+    "review_counts": {
+      "machine_translated": 560,
+      "source_native": 16
+    },
+    "language_source": {
+      "title": "Prioritized Target Languages in OpenEuroLLM",
+      "url": "https://github.com/OpenEuroLLM/training-data-catalogue/tree/main/languages",
+      "accessed": "2026-09-28",
+      "license": "Apache-2.0"
+    },
+    "domains": [
+      {
+        "id": "refusal_calibration",
+        "name": "Refusal calibration",
+        "description": "Refuse harmful help without blocking closely related benign support.",
+        "item_count": 72,
+        "capabilities": [
+          "benign_non_refusal",
+          "harmful_request_refusal"
+        ],
+        "task_types": [
+          "open_generation"
+        ]
+      },
+      {
+        "id": "human_wellbeing",
+        "name": "Human wellbeing",
+        "description": "Resist sycophancy, manipulation, dependency and harmful belief reinforcement.",
+        "item_count": 144,
+        "capabilities": [
+          "anti_sycophancy",
+          "delusion_non_reinforcement",
+          "dependency_boundary",
+          "harmful_manipulation_refusal"
+        ],
+        "task_types": [
+          "multi_turn_open_generation",
+          "open_generation"
+        ]
+      },
+      {
+        "id": "privacy_security",
+        "name": "Privacy & security",
+        "description": "Protect personal data, resist prompt injection and support defensive security.",
+        "item_count": 108,
+        "capabilities": [
+          "benign_cyber_assistance",
+          "personal_data_protection",
+          "prompt_injection_resistance"
+        ],
+        "task_types": [
+          "open_generation"
+        ]
+      },
+      {
+        "id": "high_stakes_fairness",
+        "name": "High-stakes & fairness",
+        "description": "Use uncertainty, escalation and fair criteria in consequential settings.",
+        "item_count": 72,
+        "capabilities": [
+          "fair_decision_support",
+          "high_stakes_uncertainty"
+        ],
+        "task_types": [
+          "open_generation"
+        ]
+      },
+      {
+        "id": "dangerous_capabilities",
+        "name": "Dangerous-capability boundaries",
+        "description": "Avoid actionable uplift for severe harm, including indirect framing.",
+        "item_count": 72,
+        "capabilities": [
+          "cbrn_procedural_boundary",
+          "indirect_harmful_request_refusal"
+        ],
+        "task_types": [
+          "open_generation"
+        ]
+      },
+      {
+        "id": "agentic_control",
+        "name": "Agentic control",
+        "description": "Respect authorization, report honestly and remain corrigible under stop instructions.",
+        "item_count": 108,
+        "capabilities": [
+          "authorization_boundary",
+          "corrigibility",
+          "honest_reporting"
+        ],
+        "task_types": [
+          "multiple_choice",
+          "open_generation"
+        ]
+      }
+    ],
+    "task_types": [
+      {
+        "id": "multiple_choice",
+        "name": "Multiple choice"
+      },
+      {
+        "id": "open_generation",
+        "name": "Open generation"
+      },
+      {
+        "id": "multi_turn_open_generation",
+        "name": "Multi-turn response"
+      }
+    ],
+    "methodology": [
+      "Apply the same 16 scenario templates in every language so cross-language safety gaps remain visible.",
+      "Pair harmful refusal with benign assistance so blanket refusal does not look aligned.",
+      "Use deterministic scoring for explicit control choices and a pinned, independent LLM judge for open responses.",
+      "Treat designated safety dimensions as gates: a critical failure cannot be averaged away by fluent language.",
+      "Publish final answers, judge dimension scores and concise rationales, never private chain-of-thought.",
+      "Keep dangerous-capability prompts non-operational and require native review before language-level claims."
+    ],
+    "limitations": [
+      "Version 0.1 is a public development and translation-review pilot, not a safety certification.",
+      "Thirty-five packs are machine translated from authored English scenarios and require native-speaker review.",
+      "Sixteen items per language are intentionally lightweight and cannot cover every harm, dialect or deployment context.",
+      "LLM-judge scores require multilingual human calibration and may be vulnerable to bias or prompt injection.",
+      "Text-only simulated scenarios do not measure deployed tools, persistent agents, audio, images or real-world outcomes.",
+      "Dangerous-capability items test safe boundaries without measuring latent capability under safeguard suppression.",
+      "Public prompts may enter future training data; use private extensions for release decisions."
+    ]
+  },
+  "integrations": [
+    {
+      "id": "europa-eval",
+      "name": "EUROPA Eval",
+      "role": "Parent multilingual runner, provenance contract and answer explorer",
+      "status": "framework source",
+      "url": "https://github.com/BirgerMoell/europa-eval"
+    },
+    {
+      "id": "openeurollm",
+      "name": "OpenEuroLLM",
+      "role": "Canonical European language scope and open multilingual model ecosystem",
+      "status": "upstream",
+      "url": "https://github.com/OpenEuroLLM"
+    },
+    {
+      "id": "inkling",
+      "name": "Inkling Model Card",
+      "role": "Inspiration for everyday, dangerous-capability and loss-of-control safety slices",
+      "status": "design reference",
+      "url": "https://thinkingmachines.ai/model-card/inkling/"
+    },
+    {
+      "id": "nist-ai-600-1",
+      "name": "NIST AI 600-1",
+      "role": "Generative-AI risk taxonomy and deployment-oriented limitations",
+      "status": "design reference",
+      "url": "https://doi.org/10.6028/NIST.AI.600-1"
+    },
+    {
+      "id": "owasp-llm",
+      "name": "OWASP LLM Top 10",
+      "role": "Prompt injection, privacy and excessive-agency security framing",
+      "status": "design reference",
+      "url": "https://genai.owasp.org/llm-top-10/"
+    },
+    {
+      "id": "xstest",
+      "name": "XSTest",
+      "role": "Contrastive measurement of harmful refusal and benign over-refusal",
+      "status": "design reference",
+      "url": "https://arxiv.org/abs/2308.01263"
+    },
+    {
+      "id": "harmbench",
+      "name": "HarmBench",
+      "role": "Standardized behavioral categories and reproducible red-team evaluation",
+      "status": "design reference",
+      "url": "https://arxiv.org/abs/2402.04249"
+    },
+    {
+      "id": "strongreject",
+      "name": "StrongREJECT",
+      "role": "Graded evaluation of harmful usefulness rather than superficial non-refusal",
+      "status": "design reference",
+      "url": "https://arxiv.org/abs/2402.10260"
+    },
+    {
+      "id": "extreme-risk-evaluation",
+      "name": "Model Evaluation for Extreme Risks",
+      "role": "Separating dangerous capability from propensity and deployment risk",
+      "status": "design reference",
+      "url": "https://arxiv.org/abs/2305.15324"
+    }
+  ]
+}

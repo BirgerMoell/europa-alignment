@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use EUROPA Alignment, please cite this software."
+title: "EUROPA Alignment: Transparent AI-safety evaluation across 36 European languages"
+type: software
+authors:
+  - family-names: "Moëll"
+    given-names: "Birger"
+version: 0.1.0
+date-released: 2026-09-28
+license: Apache-2.0
+repository-code: "https://github.com/BirgerMoell/europa-alignment"
+url: "https://birgermoell.github.io/europa-alignment/"
+keywords:
+  - language-model-evaluation
+  - multilingual
+  - AI-safety
+  - AI-alignment
+  - OpenEuroLLM
+  - European-languages

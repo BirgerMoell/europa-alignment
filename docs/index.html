@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="EUROPA Alignment is an open, evidence-first AI safety evaluation across the 36 languages prioritized by OpenEuroLLM.">
+    <meta name="theme-color" content="#092750">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="EUROPA Alignment">
+    <meta property="og:title" content="EUROPA Alignment — multilingual AI safety, made inspectable">
+    <meta property="og:description" content="Evaluate refusal calibration, human wellbeing, privacy, fairness, dangerous-capability boundaries and agentic control across 36 languages.">
+    <meta property="og:url" content="https://birgermoell.github.io/europa-alignment/">
+    <meta property="og:image" content="https://birgermoell.github.io/europa-alignment/og.png">
+    <meta property="og:image:alt" content="EUROPA Alignment: multilingual AI safety evidence across 36 European languages">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="EUROPA Alignment — multilingual AI safety, made inspectable">
+    <meta name="twitter:description" content="An open safety evaluation for API and local language models across 36 languages.">
+    <meta name="twitter:image" content="https://birgermoell.github.io/europa-alignment/og.png">
+    <link rel="canonical" href="https://birgermoell.github.io/europa-alignment/">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css?v=20260928-1">
+    <title>EUROPA Alignment — multilingual AI safety, made inspectable</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="EUROPA Alignment home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+        <span>EUROPA <b>ALIGNMENT</b></span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#languages">Languages</a>
+        <a href="#map">Safety map</a>
+        <a href="#method">Method</a>
+        <a href="#run">Run it</a>
+        <a href="#results">Evidence</a>
+      </nav>
+      <a class="nav-cta" href="https://github.com/BirgerMoell/europa-alignment">GitHub <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow"><span></span> OPENEUROLLM · MULTILINGUAL AI SAFETY</p>
+          <h1>Alignment travels.<br><em>Or it doesn’t.</em></h1>
+          <p class="hero-lead">EUROPA Alignment probes whether safety behavior survives language changes: calibrated refusal, human wellbeing, privacy, fairness, dangerous-capability boundaries and controllability—without hiding the answers behind one score.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="#run">Run the safety suite</a>
+            <a class="button quiet" href="https://github.com/BirgerMoell/europa-alignment">Explore the repository</a>
+          </div>
+          <p class="pilot-note"><strong>v0.1 public development set.</strong> Sixteen scenarios per language keep the suite lightweight. Thirty-five generated language packs remain explicitly marked for native review before safety claims or leaderboard use.</p>
+        </div>
+        <div class="atlas" aria-label="EUROPA multilingual alignment matrix illustration">
+          <div class="atlas-topline"><span>ALIGNMENT MATRIX</span><span>36 × 16</span></div>
+          <div class="atlas-grid" aria-hidden="true">
+            <span class="cell a1"></span><span class="cell a2"></span><span class="cell a3"></span><span class="cell a4"></span>
+            <span class="cell a5"></span><span class="cell a6"></span><span class="cell a7"></span><span class="cell a8"></span>
+            <span class="cell a9"></span><span class="cell a10"></span><span class="cell a11"></span><span class="cell a12"></span>
+            <span class="cell a13"></span><span class="cell a14"></span><span class="cell a15"></span><span class="cell a16"></span>
+          </div>
+          <div class="atlas-axis"><span>LANGUAGE</span><span>SAFETY BEHAVIOR →</span></div>
+          <div class="atlas-caption">
+            <strong>Same risk.<br>Every language.</strong>
+            <p>An average is a summary. A safety failure is evidence.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="metric-strip" aria-label="Pilot suite statistics">
+        <div><strong data-stat="items">576</strong><span>parallel safety items</span></div>
+        <div><strong data-stat="languages">36</strong><span>target languages</span></div>
+        <div><strong data-stat="templates">16</strong><span>scenarios per language</span></div>
+        <div><strong data-stat="domains">6</strong><span>safety domains</span></div>
+      </section>
+
+      <section class="section language-section" id="languages">
+        <div class="section-heading">
+          <p class="kicker">01 / LANGUAGES</p>
+          <div>
+            <h2>The whole target set.<br>Nothing hidden in “multilingual.”</h2>
+            <p>The registry follows OpenEuroLLM’s current 36 macro-languages and preserves its language/script variants. Every language receives the same risk scenarios so cross-language safety gaps stay visible.</p>
+          </div>
+        </div>
+        <div class="review-banner"><strong>Review status is data.</strong><span>English is the authored source pack. Every generated translation carries its model, decoding protocol and review state until a native speaker approves it.</span></div>
+        <div class="language-grid" id="language-grid" aria-live="polite"></div>
+        <p class="source-note">Canonical scope: <a href="https://github.com/OpenEuroLLM/training-data-catalogue/tree/main/languages">OpenEuroLLM training-data catalogue ↗</a></p>
+      </section>
+
+      <section class="section map-section" id="map">
+        <div class="section-heading">
+          <p class="kicker">02 / SAFETY MAP</p>
+          <div>
+            <h2>Safe is not one behavior.</h2>
+            <p>A model can refuse an obvious attack yet comply in role-play, reinforce a harmful belief, expose personal data or ignore a stop instruction. EUROPA keeps those failure modes separate.</p>
+          </div>
+        </div>
+        <div class="domain-grid" id="domain-grid" aria-live="polite">
+          <article class="domain-card loading"><span>01</span><h3>Loading safety map…</h3></article>
+        </div>
+        <div class="task-band"><p>Three response forms</p><div id="task-types"></div></div>
+      </section>
+
+      <section class="section method-section" id="method">
+        <div class="section-heading inverse">
+          <p class="kicker">03 / METHOD</p>
+          <div>
+            <h2>Hard boundaries.<br>Visible evidence.</h2>
+            <p>EUROPA combines strict control-choice checks with a named, revision-pinned LLM judge. Safety-critical dimensions gate the score, so fluent wording cannot average away a dangerous failure.</p>
+          </div>
+        </div>
+        <div class="method-layout">
+          <ol class="method-list" id="method-list">
+            <li><span>01</span><div><strong>Pair refusal with assistance</strong><p>A model must refuse harmful help and still answer closely related benign security questions.</p></div></li>
+            <li><span>02</span><div><strong>Test the interaction</strong><p>Single-turn, indirect and real multi-turn scenarios surface failures that simple question answering misses.</p></div></li>
+            <li><span>03</span><div><strong>Gate critical failures</strong><p>Privacy, non-discrimination, non-reinforcement and dangerous-capability boundaries cannot be averaged away.</p></div></li>
+            <li><span>04</span><div><strong>Name the judge</strong><p>Open responses require an independent pinned judge; every dimension score and concise rationale remains inspectable.</p></div></li>
+            <li><span>05</span><div><strong>Publish the limits</strong><p>This suite measures text behavior, not latent capability, deployed tool safety or certification.</p></div></li>
+          </ol>
+          <aside class="contrast-card">
+            <p class="small-label">CALIBRATED REFUSAL PAIR</p>
+            <div class="pair-row"><span class="pair-icon pressure">01</span><div><strong>Harmful request</strong><p>Refuse the fraudulent message and redirect safely.</p></div><b class="score-dot good">SAFE</b></div>
+            <div class="pair-link"><span></span><i>same topic, different intent</i><span></span></div>
+            <div class="pair-row"><span class="pair-icon base">02</span><div><strong>Benign defense</strong><p>Give practical anti-phishing guidance without over-refusal.</p></div><b class="score-dot good">HELP</b></div>
+            <div class="gap-line"><span>PAIR RETENTION</span><strong>VISIBLE</strong></div>
+            <p class="card-note">A blanket refusal is not treated as alignment. Safety includes useful support when the request is legitimate.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section run-section" id="run">
+        <div class="section-heading">
+          <p class="kicker">04 / RUN</p>
+          <div>
+            <h2>One suite. Your endpoint.</h2>
+            <p>The dependency-free core talks to hosted APIs and Ollama’s native chat endpoint. Transformers is an optional direct backend. Filter one language for diagnostics or run all 576 items for comparable evidence.</p>
+          </div>
+        </div>
+        <div class="runner">
+          <div class="runner-tabs" role="tablist" aria-label="Run examples">
+            <button role="tab" aria-selected="true" data-tab="api">Hosted API</button>
+            <button role="tab" aria-selected="false" data-tab="endpoint">Ollama / local</button>
+            <button role="tab" aria-selected="false" data-tab="hf">Transformers</button>
+          </div>
+          <div class="code-window">
+            <div class="window-bar"><span></span><span></span><span></span><button id="copy-command" type="button">Copy</button></div>
+            <pre id="command-api" class="command active"><code><span class="dim">export</span> OPENAI_API_KEY=<span class="yellow">"…"</span>
+europa-alignment run \
+  --backend openai-compatible \
+  --base-url https://api.openai.com/v1 \
+  --model YOUR_MODEL_ID \
+  --revision PINNED_VERSION \
+  --judge-backend openai-compatible \
+  --judge-model YOUR_JUDGE_ID \
+  --judge-revision PINNED_JUDGE_VERSION \
+  --output results/runs/model-api.json</code></pre>
+            <pre id="command-endpoint" class="command"><code>europa-alignment run \
+  --backend ollama \
+  --model gemma4:31b \
+  --revision OLLAMA_MODEL_DIGEST \
+  --language swe \
+  --diagnostic \
+  --output results/runs/gemma-swe.json</code></pre>
+            <pre id="command-hf" class="command"><code><span class="dim">python3 -m pip install -e</span> <span class="yellow">'.[local]'</span>
+europa-alignment run \
+  --backend huggingface \
+  --model /path/to/checkpoint \
+  --revision CHECKPOINT_SHA \
+  --judge-backend ollama \
+  --judge-model YOUR_INDEPENDENT_JUDGE \
+  --judge-revision JUDGE_DIGEST \
+  --output results/runs/model-hf.json</code></pre>
+          </div>
+          <div class="runner-foot"><span><b>↻</b> Resumable after every item</span><span><b>⌁</b> API keys never enter artifacts</span><span><b>◇</b> Raw answers retained</span></div>
+        </div>
+      </section>
+
+      <section class="section results-section" id="results">
+        <div class="section-heading">
+          <p class="kicker">05 / EVIDENCE</p>
+          <div>
+            <h2>Results, with their caveats attached.</h2>
+            <p>The page accepts only complete, non-diagnostic runs with independent pinned target and judge revisions. Open any run to filter by language and inspect the scenario, prior turns, final answer, critical gates and named judge rationale.</p>
+          </div>
+        </div>
+        <div id="results-view" class="results-empty" aria-live="polite">
+          <span class="empty-glyph" aria-hidden="true">∅</span>
+          <div><h3>No reviewed full-suite runs yet.</h3><p>The harness is ready. The first contribution should be a reproducible 576-item baseline with independent, pinned target and judge revisions.</p></div>
+          <a class="button quiet" href="https://github.com/BirgerMoell/europa-alignment/blob/main/CONTRIBUTING.md">Submit a run</a>
+        </div>
+        <div id="deep-dive" class="deep-dive" aria-live="polite" hidden>
+          <div class="deep-heading"><div><p class="small-label">SAFETY EVIDENCE EXPLORER</p><h3>From aggregate score to actual evidence.</h3></div><p>Model outputs are untrusted evidence and may contain unsafe text. Private chain-of-thought is not published; prior turns, final answers, critical gates and the named judge’s concise rationale are.</p></div>
+          <div class="deep-controls">
+            <label>Model<select id="detail-model" aria-label="Select model"></select></label>
+            <label>Language<select id="detail-language" aria-label="Filter by language"><option value="all">All languages</option></select></label>
+            <label>Domain<select id="detail-domain" aria-label="Filter by domain"><option value="all">All domains</option></select></label>
+            <label>View<select id="detail-filter" aria-label="Filter answers"><option value="all">All answers</option><option value="attention">Needs attention</option><option value="judged">LLM-judged</option><option value="deterministic">Deterministic</option></select></label>
+          </div>
+          <div class="deep-language-summary" id="deep-language-summary"></div>
+          <div class="deep-protocol" id="deep-protocol"></div>
+          <div class="deep-caveats" id="deep-caveats"></div>
+          <div class="deep-layout"><div class="item-list" id="detail-items" role="list" aria-label="Evaluation items"></div><article class="answer-detail" id="detail-answer"></article></div>
+        </div>
+      </section>
+
+      <section class="section ecosystem-section" id="ecosystem">
+        <div class="section-heading"><p class="kicker">06 / FOUNDATIONS</p><div><h2>Grounded in public safety work.</h2><p>EUROPA Alignment is inspired by contemporary model-card practice and established public safety evaluation research, while contributing a lightweight parallel layer for OpenEuroLLM languages.</p></div></div>
+        <div class="integration-list" id="integration-list"><a href="https://github.com/OpenEuroLLM"><span>01</span><strong>OpenEuroLLM</strong><p>Open multilingual foundation models for Europe</p><i>↗</i></a></div>
+      </section>
+
+      <section class="call-to-action">
+        <p class="kicker">35 LANGUAGE PACKS NEED NATIVE REVIEW</p>
+        <h2>Help make multilingual safety harder to bluff—and easier to inspect.</h2>
+        <div><a class="button light" href="https://github.com/BirgerMoell/europa-alignment/blob/main/CONTRIBUTING.md">Review a language pack</a><a href="https://github.com/BirgerMoell/europa-alignment/blob/main/docs/METHODOLOGY.md" class="text-link">Read the methodology <span aria-hidden="true">→</span></a></div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand footer-brand" href="#top"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span>EUROPA <b>ALIGNMENT</b></span></a>
+      <p>Open code under Apache-2.0 · Original pilot data under CC0-1.0</p>
+      <div><a href="https://github.com/BirgerMoell/europa-alignment">GitHub</a><a href="https://github.com/BirgerMoell/europa-alignment/blob/main/docs/METHODOLOGY.md">Methodology</a><a href="https://github.com/BirgerMoell/europa-alignment/blob/main/docs/SOURCES.md">Sources</a></div>
+    </footer>
+    <script src="data/site-data.js?v=20260928-1"></script>
+    <script src="app.js?v=20260928-1" defer></script>
+  </body>
+</html>
