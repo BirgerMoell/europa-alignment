@@ -10,8 +10,8 @@
     <rect x="48" y="48" width="40" height="40" fill="#092e63"/>
   </g>
   <text x="218" y="151" fill="#101925" font-family="Arial, sans-serif" font-weight="800" font-size="40">EUROPA <tspan fill="#092e63">ALIGNMENT</tspan></text>
-  <text x="88" y="285" fill="#101925" font-family="Georgia, serif" font-size="74">Alignment travels.</text>
-  <text x="88" y="370" fill="#092e63" font-family="Georgia, serif" font-style="italic" font-size="74">Or it doesn’t.</text>
+  <text x="88" y="285" fill="#101925" font-family="Georgia, serif" font-size="74">Test AI safety</text>
+  <text x="88" y="370" fill="#092e63" font-family="Georgia, serif" font-style="italic" font-size="74">in 36 languages.</text>
   <line x1="88" y1="438" x2="1112" y2="438" stroke="#c9c5ba" stroke-width="2"/>
   <text x="88" y="493" fill="#626a73" font-family="Arial, sans-serif" font-size="23">OPEN · INSPECTABLE · CRITICAL GATES · NAMED JUDGE</text>
   <text x="88" y="542" fill="#d9503f" font-family="Arial, sans-serif" font-weight="700" font-size="19">576 SAFETY SCENARIOS · 36 OPENEUROLLM LANGUAGES</text>
