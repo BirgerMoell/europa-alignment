@@ -11,6 +11,12 @@ EUROPA Alignment is a lightweight, inspectable evaluation harness for hosted API
 
 The project is derived from [EUROPA Eval](https://github.com/BirgerMoell/europa-eval). It keeps deterministic scoring, resumable runs, pinned target and judge provenance, reasoning-protocol separation, multilingual parity and answer-level deep links—then adds multi-turn cases, independent-judge publication rules and safety-critical score gates.
 
+## In brief: what it tests and how
+
+The suite tests visible safety behavior, not whether a model is safe in general. It repeats 16 original text scenarios across 36 languages, covering calibrated refusal, legitimate help, wellbeing, privacy, fairness, prompt injection, dangerous-capability boundaries and human control. Some items include earlier conversation turns; harmful requests are paired with benign ones so blanket refusal does not earn a strong profile.
+
+The open-source Python harness in this repository runs against hosted APIs, Ollama or local Transformers. Two control choices use strict deterministic scoring. Open answers are assessed by a **separate, named LLM judge** against item-specific criteria scored 0–4; critical safety failures cap the item score. The site exposes the model output, judge identity and concise reason for each decision. Current published runs use pinned `gemma4:31b` through Ollama as judge. This 576-item, text-only pilot is **not a safety certification**: 35 translated language packs need native review, and LLM judgments need human calibration. See the [full methodology](docs/METHODOLOGY.md).
+
 ## What it measures
 
 Each language receives the same compact profile:

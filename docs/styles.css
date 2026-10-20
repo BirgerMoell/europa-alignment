@@ -155,6 +155,19 @@ h1 em { color: var(--blue); font-weight: 500; }
 .gap-line span { font-size: 9px; font-weight: 900; letter-spacing: .12em; }
 .gap-line strong { color: var(--red); font-family: Georgia, serif; font-size: 25px; font-weight: 500; }
 .card-note { margin: 16px 0 0; color: var(--muted); font-size: 11px; }
+.method-explainer { margin: 44px 0 0 214px; border: 1px solid rgba(255,255,255,.4); background: #12396b; }
+.method-explainer-heading { padding: 23px 26px 18px; border-bottom: 1px solid rgba(255,255,255,.25); }
+.method-explainer-heading .small-label { margin: 0 0 8px; color: var(--yellow); }
+.method-explainer h3 { margin: 0; font-family: Georgia, serif; font-size: clamp(25px, 2.5vw, 34px); font-weight: 500; line-height: 1.1; }
+.method-explainer-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.method-explainer-grid > div { padding: 23px 26px 25px; border-right: 1px solid rgba(255,255,255,.25); }
+.method-explainer-grid > div:last-child { border-right: 0; }
+.method-explainer h4 { margin: 0 0 9px; color: var(--yellow); font-size: 12px; font-weight: 850; text-transform: uppercase; letter-spacing: .08em; }
+.method-explainer-grid p { margin: 0; color: #d7e2ef; font-size: 13px; line-height: 1.6; }
+.method-explainer a { color: white; text-underline-offset: 3px; }
+.method-explainer a:hover, .method-explainer a:focus-visible { color: var(--yellow); }
+.method-explainer code { color: white; font-size: .93em; }
+.method-explainer-limit { margin: 0; padding: 17px 26px 20px; border-top: 1px solid rgba(255,255,255,.25); color: #b9cce1; font-size: 12px; line-height: 1.55; }
 
 .runner { max-width: 1000px; margin-left: 214px; border: 1px solid var(--ink); background: #0e1721; color: white; }
 .runner-tabs { display: flex; background: var(--paper); border-bottom: 1px solid var(--ink); }
@@ -336,6 +349,10 @@ footer > div a { color: #cdd4dd; font-size: 11px; }
   .domain-grid { grid-template-columns: repeat(2, 1fr); }
   .section-heading { grid-template-columns: 120px 1fr; }
   .method-layout { gap: 45px; }
+  .method-explainer { margin-left: 144px; }
+  .method-explainer-grid { grid-template-columns: 1fr; }
+  .method-explainer-grid > div { border-right: 0; border-bottom: 1px solid rgba(255,255,255,.25); }
+  .method-explainer-grid > div:last-child { border-bottom: 0; }
   .runner, .results-empty, .integration-list { margin-left: 144px; }
   .deep-layout { grid-template-columns: 280px minmax(0, 1fr); }
   .integration-list a { grid-template-columns: 40px 220px 1fr auto; }
@@ -360,6 +377,7 @@ footer > div a { color: #cdd4dd; font-size: 11px; }
   .domain-card { min-height: 210px; }
   .task-band { grid-template-columns: 1fr; }
   .method-layout { grid-template-columns: 1fr; }
+  .method-explainer { margin-left: 0; }
   .contrast-card { transform: none; }
   .runner, .results-empty, .integration-list { margin-left: 0; }
   .runner-tabs button { flex: 1; padding: 0 8px; }

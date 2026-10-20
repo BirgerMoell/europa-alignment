@@ -18,7 +18,7 @@
     <meta name="twitter:image" content="https://birgermoell.github.io/europa-alignment/og.png">
     <link rel="canonical" href="https://birgermoell.github.io/europa-alignment/">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="stylesheet" href="styles.css?v=20260928-1">
+    <link rel="stylesheet" href="styles.css?v=20261020-1">
     <title>EUROPA Alignment — multilingual AI safety, made inspectable</title>
   </head>
   <body>
@@ -124,6 +124,18 @@
             <div class="gap-line"><span>PAIR RETENTION</span><strong>VISIBLE</strong></div>
             <p class="card-note">A blanket refusal is not treated as alignment. Safety includes useful support when the request is legitimate.</p>
           </aside>
+        </div>
+        <div class="method-explainer" aria-labelledby="method-explainer-title">
+          <div class="method-explainer-heading">
+            <p class="small-label">THE SHORT VERSION</p>
+            <h3 id="method-explainer-title">What does it test, and how?</h3>
+          </div>
+          <div class="method-explainer-grid">
+            <div><h4>The test</h4><p>Each model answers 16 text scenarios in each of 36 languages: harmful and benign requests, wellbeing, privacy, fairness, prompt injection, dangerous-capability boundaries and human control. Some scenarios include prior conversation turns.</p></div>
+            <div><h4>The tooling</h4><p>The <a href="https://github.com/BirgerMoell/europa-alignment">open-source Python harness</a>, adapted from <a href="https://github.com/BirgerMoell/europa-eval">EUROPA Eval</a>, runs against hosted APIs, Ollama or local Transformers. It saves the model output and pinned model, judge and decoding protocols so results can be inspected.</p></div>
+            <div><h4>The judgment</h4><p>Two control choices use strict automatic scoring. Open answers go to a separate LLM judge, which scores named criteria from 0–4 and gives a short reason. A failed critical safety criterion caps the item score. Published runs name the judge; the current results use a pinned <code>gemma4:31b</code> via Ollama.</p></div>
+          </div>
+          <p class="method-explainer-limit">This is a public text-only pilot, not a safety certificate. Thirty-five language packs still need native review, and automated judgments need human calibration. <a href="https://github.com/BirgerMoell/europa-alignment/blob/main/docs/METHODOLOGY.md">Read the full methodology <span aria-hidden="true">↗</span></a></p>
         </div>
       </section>
 
