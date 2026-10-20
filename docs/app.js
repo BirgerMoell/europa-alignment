@@ -234,13 +234,15 @@ function setupDeepDive() {
       deepDive.scrollIntoView({ behavior: "smooth", block: "start" });
     });
   });
-  renderDeepDive();
-  if (window.location.hash === "#deep-dive") {
-    window.requestAnimationFrame(() => deepDive.scrollIntoView({ behavior: "auto", block: "start" }));
+  renderDeepDive({ updateUrl: false });
+  const initialAnchor = window.location.hash.slice(1);
+  const anchorTarget = initialAnchor ? document.getElementById(initialAnchor) : null;
+  if (anchorTarget) {
+    window.requestAnimationFrame(() => anchorTarget.scrollIntoView({ behavior: "auto", block: "start" }));
   }
 }
 
-function renderDeepDive() {
+function renderDeepDive({ updateUrl = true } = {}) {
   const run = state.results[state.detail.runIndex];
   if (!run) return;
   const outputDiagnostics = run.summary?.output_diagnostics || {};
@@ -305,7 +307,7 @@ function renderDeepDive() {
     });
   });
   const selected = entries.find(entry => entry.item.id === state.detail.itemId) || entries[0];
-  syncDeepLink(run.run_id, selected.item.id);
+  if (updateUrl) syncDeepLink(run.run_id, selected.item.id);
   renderAnswer(run, selected);
 }
 

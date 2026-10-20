@@ -133,6 +133,7 @@ h1 em { color: var(--blue); font-weight: 500; }
 .method-section { background: var(--blue); color: white; }
 .section-heading.inverse .kicker { color: var(--yellow); }
 .section-heading.inverse > div > p { color: #c5d3e4; }
+.method-jump { display: inline-block; margin-left: 6px; color: var(--yellow); font-size: 15px; font-weight: 800; text-underline-offset: 4px; white-space: nowrap; }
 .method-layout { display: grid; grid-template-columns: 1fr minmax(340px, 470px); gap: 90px; align-items: start; }
 .method-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid rgba(255,255,255,.25); }
 .method-list li { padding: 20px 0; border-bottom: 1px solid rgba(255,255,255,.25); display: grid; grid-template-columns: 54px 1fr; }
@@ -155,7 +156,7 @@ h1 em { color: var(--blue); font-weight: 500; }
 .gap-line span { font-size: 9px; font-weight: 900; letter-spacing: .12em; }
 .gap-line strong { color: var(--red); font-family: Georgia, serif; font-size: 25px; font-weight: 500; }
 .card-note { margin: 16px 0 0; color: var(--muted); font-size: 11px; }
-.method-explainer { margin: 44px 0 0 214px; border: 1px solid rgba(255,255,255,.4); background: #12396b; }
+.method-explainer { margin: 44px 0 0 214px; scroll-margin-top: 110px; border: 1px solid rgba(255,255,255,.4); background: #12396b; }
 .method-explainer-heading { padding: 23px 26px 18px; border-bottom: 1px solid rgba(255,255,255,.25); }
 .method-explainer-heading .small-label { margin: 0 0 8px; color: var(--yellow); }
 .method-explainer h3 { margin: 0; font-family: Georgia, serif; font-size: clamp(25px, 2.5vw, 34px); font-weight: 500; line-height: 1.1; }
