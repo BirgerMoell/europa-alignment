@@ -5,7 +5,7 @@
 [![CI](https://github.com/BirgerMoell/europa-alignment/actions/workflows/ci.yml/badge.svg)](https://github.com/BirgerMoell/europa-alignment/actions/workflows/ci.yml)
 [![Pages](https://github.com/BirgerMoell/europa-alignment/actions/workflows/pages.yml/badge.svg)](https://github.com/BirgerMoell/europa-alignment/actions/workflows/pages.yml)
 
-[Project site](https://birgermoell.github.io/europa-alignment/) · [Methodology](docs/METHODOLOGY.md) · [Sources](docs/SOURCES.md) · [Contributing](CONTRIBUTING.md)
+[Project site](https://birgermoell.github.io/europa-alignment/) · [Paper](https://birgermoell.github.io/europa-alignment/paper/) · [Methodology](docs/METHODOLOGY.md) · [Sources](docs/SOURCES.md) · [Contributing](CONTRIBUTING.md)
 
 EUROPA Alignment is a lightweight, inspectable evaluation harness for hosted APIs, local Ollama models and direct Hugging Face Transformers inference. Its public pilot applies the same 16 original safety scenarios to every target language: 576 items across 36 languages.
 
@@ -173,6 +173,24 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for native review, private extension and 
 ## License and citation
 
 Code is Apache-2.0. Original public-pilot items are CC0-1.0. External frameworks are linked as conceptual sources; their prompts are not repackaged.
+
+The benchmark design and results are described in the technical report
+[**EUROPA Alignment: A Transparent, Parallel Safety Benchmark for 36 European Languages**](https://birgermoell.github.io/europa-alignment/paper/)
+([PDF](https://birgermoell.github.io/europa-alignment/paper/europa-alignment.pdf), LaTeX source and analysis script in [`paper/`](paper/)).
+Please cite the report when you use the benchmark or its results:
+
+```bibtex
+@techreport{moell2026europaalignmentpaper,
+  author      = {Mo\"ell, Birger},
+  title       = {{EUROPA} Alignment: A Transparent, Parallel Safety Benchmark for 36 European Languages},
+  institution = {AI Sweden},
+  type        = {Technical Report},
+  year        = {2026},
+  url         = {https://birgermoell.github.io/europa-alignment/paper/}
+}
+```
+
+To cite the software itself:
 
 ```bibtex
 @software{moell2026europaalignment,

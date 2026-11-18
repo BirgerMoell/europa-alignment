@@ -17,3 +17,15 @@ keywords:
   - AI-alignment
   - OpenEuroLLM
   - European-languages
+preferred-citation:
+  type: report
+  title: "EUROPA Alignment: A Transparent, Parallel Safety Benchmark for 36 European Languages"
+  authors:
+    - family-names: "Moëll"
+      given-names: "Birger"
+      affiliation: "AI Sweden"
+  institution:
+    name: "AI Sweden"
+  year: 2026
+  month: 11
+  url: "https://birgermoell.github.io/europa-alignment/paper/"

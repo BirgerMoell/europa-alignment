@@ -1,0 +1,16 @@
+{
+  "title": "EUROPA Alignment: A Transparent, Parallel Safety Benchmark for 36 European Languages",
+  "upload_type": "publication",
+  "publication_type": "technicalnote",
+  "description": "<p>Technical report, code, benchmark items and run artifacts for EUROPA Alignment, an open multilingual AI-safety benchmark that applies 16 original safety scenarios to each of the 36 languages prioritized by OpenEuroLLM (576 items), with paired harmful/benign contrasts, critical-dimension score gates and a pinned independent LLM judge. The report evaluates four SFT and DPO checkpoints of a 9B OpenEuroLLM model. The PDF is in paper/europa-alignment.pdf.</p>",
+  "creators": [
+    {"name": "Moëll, Birger", "affiliation": "AI Sweden"}
+  ],
+  "keywords": ["AI safety", "alignment", "multilingual evaluation", "European languages", "LLM-as-a-judge", "refusal calibration", "OpenEuroLLM"],
+  "license": "Apache-2.0",
+  "language": "eng",
+  "related_identifiers": [
+    {"identifier": "https://birgermoell.github.io/europa-alignment/paper/", "relation": "isDocumentedBy", "resource_type": "publication-technicalnote"},
+    {"identifier": "https://github.com/BirgerMoell/europa-alignment", "relation": "isSupplementTo", "resource_type": "software"}
+  ]
+}

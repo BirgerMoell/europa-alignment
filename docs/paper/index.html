@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EUROPA Alignment: A Transparent, Parallel Safety Benchmark for 36 European Languages</title>
+    <meta name="description" content="Paper describing EUROPA Alignment, an open multilingual AI-safety benchmark of 576 parallel items in 36 European languages, with results for SFT and DPO checkpoints of a 9B OpenEuroLLM model.">
+
+    <!-- Highwire Press tags for Google Scholar indexing -->
+    <meta name="citation_title" content="EUROPA Alignment: A Transparent, Parallel Safety Benchmark for 36 European Languages">
+    <meta name="citation_author" content="Moëll, Birger">
+    <meta name="citation_author_institution" content="AI Sweden">
+    <meta name="citation_publication_date" content="2026/11/18">
+    <meta name="citation_online_date" content="2026/11/18">
+    <meta name="citation_technical_report_institution" content="AI Sweden">
+    <meta name="citation_technical_report_number" content="EUROPA-Alignment-2026-1">
+    <meta name="citation_language" content="en">
+    <meta name="citation_keywords" content="AI safety; alignment; multilingual evaluation; European languages; LLM-as-a-judge; refusal calibration; OpenEuroLLM">
+    <meta name="citation_pdf_url" content="https://birgermoell.github.io/europa-alignment/paper/europa-alignment.pdf">
+    <meta name="citation_abstract_html_url" content="https://birgermoell.github.io/europa-alignment/paper/">
+    <!-- Dublin Core -->
+    <meta name="DC.title" content="EUROPA Alignment: A Transparent, Parallel Safety Benchmark for 36 European Languages">
+    <meta name="DC.creator" content="Moëll, Birger">
+    <meta name="DC.date" content="2026-11-18">
+    <meta name="DC.type" content="Text.Report">
+
+    <link rel="canonical" href="https://birgermoell.github.io/europa-alignment/paper/">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    <style>
+      :root { --ink:#101925; --paper:#f6f3ea; --blue:#0a2e63; --muted:#5b636c; --line:#c9c5ba; --code:#ece8dc; }
+      @media (prefers-color-scheme: dark) {
+        :root { --ink:#e9e6dd; --paper:#121820; --blue:#9cc2ff; --muted:#a3abb4; --line:#3a4350; --code:#1c242e; }
+      }
+      * { box-sizing: border-box; }
+      body { margin:0; background:var(--paper); color:var(--ink); font-family: Georgia, "Times New Roman", serif; line-height:1.6; }
+      main { max-width: 760px; margin: 0 auto; padding: 40px 16px 80px; }
+      .kicker { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 13px; letter-spacing:.08em; text-transform: uppercase; color: var(--muted); }
+      .kicker a { color: inherit; }
+      h1 { font-size: clamp(26px, 5vw, 38px); line-height:1.15; margin: 10px 0 14px; color: var(--blue); }
+      .authors { font-size: 18px; margin: 0; }
+      .meta { font-family: ui-sans-serif, system-ui, sans-serif; color: var(--muted); font-size: 14px; margin: 4px 0 24px; }
+      .actions { display:flex; flex-wrap:wrap; gap:10px; margin-bottom: 28px; font-family: ui-sans-serif, system-ui, sans-serif; }
+      .actions a { display:inline-block; padding: 9px 14px; border:1px solid var(--ink); text-decoration:none; color: var(--ink); font-weight:600; font-size:14px; }
+      .actions a.primary { background: var(--blue); border-color: var(--blue); color: var(--paper); }
+      h2 { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 15px; letter-spacing:.06em; text-transform: uppercase; margin-top: 36px; border-top:1px solid var(--line); padding-top: 18px; }
+      ul { padding-left: 20px; }
+      pre { background: var(--code); padding: 14px; overflow-x: auto; font-size: 13px; line-height:1.45; white-space: pre; }
+      .copy { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 13px; padding: 6px 10px; border:1px solid var(--line); background: transparent; color: var(--ink); cursor:pointer; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="kicker"><a href="../">EUROPA Alignment</a> · Technical report</p>
+      <h1>EUROPA Alignment: A Transparent, Parallel Safety Benchmark for 36 European Languages</h1>
+      <p class="authors">Birger Moëll</p>
+      <p class="meta">AI Sweden · November 2026 · Version 1.0</p>
+
+      <div class="actions">
+        <a class="primary" href="europa-alignment.pdf">PDF</a>
+        <a href="https://github.com/BirgerMoell/europa-alignment">Code &amp; data</a>
+        <a href="../#results">Answer explorer</a>
+        <a href="#cite">Cite</a>
+      </div>
+
+      <h2>Abstract</h2>
+      <p>Safety evaluations of large language models are still predominantly English, yet models trained for Europe are expected to behave consistently in two dozen official languages and more. We present EUROPA Alignment, an open, lightweight benchmark and evaluation harness that applies the same 16 original safety scenarios to each of the 36 languages prioritized by OpenEuroLLM (576 items). The scenarios cover refusal calibration, human wellbeing (sycophancy, delusion reinforcement, dependency, manipulation), privacy and prompt injection, high-stakes and fairness-sensitive advice, non-operational dangerous-capability boundaries, and agentic control. Three design choices distinguish it: (i) harmful requests are paired with closely related benign requests so that blanket refusal is penalized; (ii) safety-critical rubric dimensions act as gates whose failure caps the item score, so fluency cannot average away a harmful answer; and (iii) every published run pins target and judge revisions, forbids self-judging, and exposes each answer with its judge rationale.</p>
+      <p>We apply the benchmark to four checkpoints of a 9B-parameter OpenEuroLLM model across supervised fine-tuning (SFT) and direct preference optimization (DPO). Three findings stand out. First, the choice of SFT mixture dominates: two SFT runs from the same base differ by +0.318 (95% CI +0.282 to +0.352) in mean score, and the weaker one refuses essentially none of the harmful requests. Second, DPO on preference data in only 12 languages raised scores by +0.117 in those languages and by +0.126 in the 23 languages it never saw (p = 0.70): safety preference tuning transferred across languages. Third, aggregate scores hide a language-level failure: every checkpoint scores at most 0.22 on Georgian, where prompts need 6.06× as many tokens as English and every response is truncated. We release the harness, items (CC0), run artifacts, analysis code and an answer-level explorer.</p>
+
+      <h2>Key results</h2>
+      <ul>
+        <li>Mean score: Stage-1 SFT 0.455 → Dolci SFT 0.773 → DPO final 0.893.</li>
+        <li>Harmful/benign phishing pair calibrated in 0 of 36 languages for Stage-1 SFT, 24 of 36 after DPO; 8 languages still over-refuse the benign request after DPO.</li>
+        <li>DPO gains are as large in the 23 languages absent from the preference data as in the 12 present.</li>
+        <li>Georgian is the weakest language for every checkpoint because of tokenizer fertility and truncation, not missing safety training.</li>
+      </ul>
+
+      <h2 id="cite">Cite</h2>
+      <p>If you use EUROPA Alignment or its results, please cite the report:</p>
+      <pre id="bibtex">@techreport{moell2026europaalignmentpaper,
+  author      = {Mo{\"e}ll, Birger},
+  title       = {{EUROPA} Alignment: A Transparent, Parallel Safety
+                 Benchmark for 36 European Languages},
+  institution = {AI Sweden},
+  type        = {Technical Report},
+  year        = {2026},
+  month       = nov,
+  url         = {https://birgermoell.github.io/europa-alignment/paper/}
+}</pre>
+      <button class="copy" type="button" onclick="navigator.clipboard &amp;&amp; navigator.clipboard.writeText(document.getElementById('bibtex').innerText).then(()=>{this.textContent='Copied'})">Copy BibTeX</button>
+    </main>
+  </body>
+</html>

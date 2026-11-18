@@ -1,0 +1,10 @@
+\begin{tabular}{lcccccccc}
+\toprule
+Checkpoint & Score [95\% CI] & Pass & Macro lang. & Min lang. & Min domain & Gate fail & Pair ret. & Echo \\
+\midrule
+Stage-1 SFT & 0.455 [0.428, 0.481] & 33.0\% & 0.455 & 0.168 (\texttt{kat}) & 0.095 & 43.6\% & 2.8\% & 11.5\% \\
+Dolci SFT & 0.773 [0.730, 0.805] & 73.1\% & 0.773 & 0.215 (\texttt{kat}) & 0.609 & 12.3\% & 44.4\% & 3.3\% \\
+DPO step 9k & 0.895 [0.847, 0.924] & 89.4\% & 0.895 & 0.184 (\texttt{kat}) & 0.820 & 6.2\% & 83.3\% & 1.0\% \\
+DPO final & 0.893 [0.848, 0.922] & 88.4\% & 0.893 & 0.219 (\texttt{kat}) & 0.826 & 6.8\% & 83.3\% & 1.0\% \\
+\bottomrule
+\end{tabular}
