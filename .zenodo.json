@@ -7,7 +7,7 @@
     {"name": "Moëll, Birger", "affiliation": "AI Sweden"}
   ],
   "keywords": ["AI safety", "alignment", "multilingual evaluation", "European languages", "LLM-as-a-judge", "refusal calibration", "OpenEuroLLM"],
-  "license": "Apache-2.0",
+  "license": "apache-2.0",
   "language": "eng",
   "related_identifiers": [
     {"identifier": "https://birgermoell.github.io/europa-alignment/paper/", "relation": "isDocumentedBy", "resource_type": "publication-technicalnote"},
