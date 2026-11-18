@@ -3,6 +3,7 @@
 **One transparent AI-alignment and safety protocol across the 36 languages prioritized by OpenEuroLLM.**
 
 [![CI](https://github.com/BirgerMoell/europa-alignment/actions/workflows/ci.yml/badge.svg)](https://github.com/BirgerMoell/europa-alignment/actions/workflows/ci.yml)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24338447.svg)](https://doi.org/10.5281/zenodo.24338447)
 [![Pages](https://github.com/BirgerMoell/europa-alignment/actions/workflows/pages.yml/badge.svg)](https://github.com/BirgerMoell/europa-alignment/actions/workflows/pages.yml)
 
 [Project site](https://birgermoell.github.io/europa-alignment/) · [Paper](https://birgermoell.github.io/europa-alignment/paper/) · [Methodology](docs/METHODOLOGY.md) · [Sources](docs/SOURCES.md) · [Contributing](CONTRIBUTING.md)
@@ -186,6 +187,7 @@ Please cite the report when you use the benchmark or its results:
   institution = {AI Sweden},
   type        = {Technical Report},
   year        = {2026},
+  doi         = {10.5281/zenodo.24338447},
   url         = {https://birgermoell.github.io/europa-alignment/paper/}
 }
 ```
